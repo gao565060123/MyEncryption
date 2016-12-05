@@ -1,0 +1,26 @@
+//
+//  PrefixHeader.pch
+//  数据加密处理
+//
+//  Created by mybook on 16/9/13.
+//  Copyright © 2016年 石塔Mr.GC. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+//vc
+#import "ViewController.h"
+#import "DeviceInfoController.h"
+#import "NSUserDefaultsSecure.h"
+#import "MD5Controller.h"
+#import "AESBase64Controller.h"
+#import "ThreeDESController.h"
+//Category
+#import "GeneralSecretFramework.h"
+
+
+#endif /* PrefixHeader_pch */

@@ -1,0 +1,810 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F86CBB551D878B380055121D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F86CBB541D878B380055121D /* main.m */; };
+		F86CBB581D878B380055121D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F86CBB571D878B380055121D /* AppDelegate.m */; };
+		F86CBB5B1D878B380055121D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F86CBB5A1D878B380055121D /* ViewController.m */; };
+		F86CBB5E1D878B380055121D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F86CBB5C1D878B380055121D /* Main.storyboard */; };
+		F86CBB601D878B380055121D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F86CBB5F1D878B380055121D /* Assets.xcassets */; };
+		F86CBB631D878B380055121D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F86CBB611D878B380055121D /* LaunchScreen.storyboard */; };
+		F86CBB6E1D878B380055121D /* ______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = F86CBB6D1D878B380055121D /* ______Tests.m */; };
+		F86CBB791D878B380055121D /* ______UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F86CBB781D878B380055121D /* ______UITests.m */; };
+		F86CBBB01D878B850055121D /* AESUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F86CBB891D878B850055121D /* AESUtil.m */; };
+		F86CBBB11D878B850055121D /* NSData+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = F86CBB8B1D878B850055121D /* NSData+AES.m */; };
+		F86CBBB21D878B850055121D /* CurrencyUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F86CBB8E1D878B850055121D /* CurrencyUtil.m */; };
+		F86CBBB31D878B850055121D /* NSData+DLDes.m in Sources */ = {isa = PBXBuildFile; fileRef = F86CBB911D878B850055121D /* NSData+DLDes.m */; };
+		F86CBBB41D878B850055121D /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = F86CBB941D878B850055121D /* GTMBase64.m */; };
+		F86CBBB51D878B850055121D /* MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = F86CBB9A1D878B850055121D /* MD5.m */; };
+		F86CBBB61D878B850055121D /* NSString+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = F86CBB9D1D878B850055121D /* NSString+JSON.m */; };
+		F86CBBB71D878B850055121D /* NSString+Verification.m in Sources */ = {isa = PBXBuildFile; fileRef = F86CBBA01D878B850055121D /* NSString+Verification.m */; };
+		F86CBBB81D878B850055121D /* NSUserDefaults+Secure.m in Sources */ = {isa = PBXBuildFile; fileRef = F86CBBA31D878B850055121D /* NSUserDefaults+Secure.m */; };
+		F86CBBB91D878B850055121D /* StringUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F86CBBA61D878B850055121D /* StringUtil.m */; };
+		F86CBBBA1D878B850055121D /* THDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F86CBBA91D878B850055121D /* THDeviceInfo.m */; };
+		F86CBBBB1D878B850055121D /* ThreeDES.m in Sources */ = {isa = PBXBuildFile; fileRef = F86CBBAC1D878B850055121D /* ThreeDES.m */; };
+		F86CBBBC1D878B850055121D /* TimeUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F86CBBAF1D878B850055121D /* TimeUtil.m */; };
+		F86CBBC61D879F830055121D /* NSUserDefaultsSecure.m in Sources */ = {isa = PBXBuildFile; fileRef = F86CBBC41D879F830055121D /* NSUserDefaultsSecure.m */; };
+		F86CBBC71D879F830055121D /* NSUserDefaultsSecure.xib in Resources */ = {isa = PBXBuildFile; fileRef = F86CBBC51D879F830055121D /* NSUserDefaultsSecure.xib */; };
+		F86CBBCB1D879F980055121D /* MD5Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = F86CBBC91D879F980055121D /* MD5Controller.m */; };
+		F86CBBCC1D879F980055121D /* MD5Controller.xib in Resources */ = {isa = PBXBuildFile; fileRef = F86CBBCA1D879F980055121D /* MD5Controller.xib */; };
+		F86CBBD51D879FC00055121D /* AESBase64Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = F86CBBD31D879FC00055121D /* AESBase64Controller.m */; };
+		F86CBBD61D879FC00055121D /* AESBase64Controller.xib in Resources */ = {isa = PBXBuildFile; fileRef = F86CBBD41D879FC00055121D /* AESBase64Controller.xib */; };
+		F86CBBDB1D879FEF0055121D /* DeviceInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = F86CBBD91D879FEF0055121D /* DeviceInfoController.m */; };
+		F86CBBDC1D879FEF0055121D /* DeviceInfoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F86CBBDA1D879FEF0055121D /* DeviceInfoController.xib */; };
+		F86CBBE71D87A6720055121D /* ThreeDESController.m in Sources */ = {isa = PBXBuildFile; fileRef = F86CBBE51D87A6720055121D /* ThreeDESController.m */; };
+		F86CBBE81D87A6720055121D /* ThreeDESController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F86CBBE61D87A6720055121D /* ThreeDESController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F86CBB6A1D878B380055121D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F86CBB481D878B380055121D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F86CBB4F1D878B380055121D;
+			remoteInfo = "数据加密处理";
+		};
+		F86CBB751D878B380055121D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F86CBB481D878B380055121D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F86CBB4F1D878B380055121D;
+			remoteInfo = "数据加密处理";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F86CBB501D878B380055121D /* 数据加密处理.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "数据加密处理.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F86CBB541D878B380055121D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F86CBB561D878B380055121D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F86CBB571D878B380055121D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F86CBB591D878B380055121D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F86CBB5A1D878B380055121D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F86CBB5D1D878B380055121D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F86CBB5F1D878B380055121D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F86CBB621D878B380055121D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F86CBB641D878B380055121D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F86CBB691D878B380055121D /* 数据加密处理Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "数据加密处理Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F86CBB6D1D878B380055121D /* ______Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "______Tests.m"; sourceTree = "<group>"; };
+		F86CBB6F1D878B380055121D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F86CBB741D878B380055121D /* 数据加密处理UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "数据加密处理UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F86CBB781D878B380055121D /* ______UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "______UITests.m"; sourceTree = "<group>"; };
+		F86CBB7A1D878B380055121D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F86CBB881D878B850055121D /* AESUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESUtil.h; sourceTree = "<group>"; };
+		F86CBB891D878B850055121D /* AESUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AESUtil.m; sourceTree = "<group>"; };
+		F86CBB8A1D878B850055121D /* NSData+AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AES.h"; sourceTree = "<group>"; };
+		F86CBB8B1D878B850055121D /* NSData+AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES.m"; sourceTree = "<group>"; };
+		F86CBB8D1D878B850055121D /* CurrencyUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrencyUtil.h; sourceTree = "<group>"; };
+		F86CBB8E1D878B850055121D /* CurrencyUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrencyUtil.m; sourceTree = "<group>"; };
+		F86CBB901D878B850055121D /* NSData+DLDes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+DLDes.h"; sourceTree = "<group>"; };
+		F86CBB911D878B850055121D /* NSData+DLDes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+DLDes.m"; sourceTree = "<group>"; };
+		F86CBB931D878B850055121D /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		F86CBB941D878B850055121D /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		F86CBB951D878B850055121D /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		F86CBB991D878B850055121D /* MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MD5.h; sourceTree = "<group>"; };
+		F86CBB9A1D878B850055121D /* MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MD5.m; sourceTree = "<group>"; };
+		F86CBB9C1D878B850055121D /* NSString+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JSON.h"; sourceTree = "<group>"; };
+		F86CBB9D1D878B850055121D /* NSString+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JSON.m"; sourceTree = "<group>"; };
+		F86CBB9F1D878B850055121D /* NSString+Verification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Verification.h"; sourceTree = "<group>"; };
+		F86CBBA01D878B850055121D /* NSString+Verification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Verification.m"; sourceTree = "<group>"; };
+		F86CBBA21D878B850055121D /* NSUserDefaults+Secure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+Secure.h"; sourceTree = "<group>"; };
+		F86CBBA31D878B850055121D /* NSUserDefaults+Secure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+Secure.m"; sourceTree = "<group>"; };
+		F86CBBA51D878B850055121D /* StringUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringUtil.h; sourceTree = "<group>"; };
+		F86CBBA61D878B850055121D /* StringUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringUtil.m; sourceTree = "<group>"; };
+		F86CBBA81D878B850055121D /* THDeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THDeviceInfo.h; sourceTree = "<group>"; };
+		F86CBBA91D878B850055121D /* THDeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THDeviceInfo.m; sourceTree = "<group>"; };
+		F86CBBAB1D878B850055121D /* ThreeDES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeDES.h; sourceTree = "<group>"; };
+		F86CBBAC1D878B850055121D /* ThreeDES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeDES.m; sourceTree = "<group>"; };
+		F86CBBAE1D878B850055121D /* TimeUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeUtil.h; sourceTree = "<group>"; };
+		F86CBBAF1D878B850055121D /* TimeUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeUtil.m; sourceTree = "<group>"; };
+		F86CBBBD1D87930E0055121D /* GeneralSecretFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralSecretFramework.h; sourceTree = "<group>"; };
+		F86CBBC31D879F830055121D /* NSUserDefaultsSecure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSUserDefaultsSecure.h; sourceTree = "<group>"; };
+		F86CBBC41D879F830055121D /* NSUserDefaultsSecure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSUserDefaultsSecure.m; sourceTree = "<group>"; };
+		F86CBBC51D879F830055121D /* NSUserDefaultsSecure.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSUserDefaultsSecure.xib; sourceTree = "<group>"; };
+		F86CBBC81D879F980055121D /* MD5Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MD5Controller.h; sourceTree = "<group>"; };
+		F86CBBC91D879F980055121D /* MD5Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MD5Controller.m; sourceTree = "<group>"; };
+		F86CBBCA1D879F980055121D /* MD5Controller.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MD5Controller.xib; sourceTree = "<group>"; };
+		F86CBBD21D879FC00055121D /* AESBase64Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESBase64Controller.h; sourceTree = "<group>"; };
+		F86CBBD31D879FC00055121D /* AESBase64Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AESBase64Controller.m; sourceTree = "<group>"; };
+		F86CBBD41D879FC00055121D /* AESBase64Controller.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AESBase64Controller.xib; sourceTree = "<group>"; };
+		F86CBBD81D879FEF0055121D /* DeviceInfoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceInfoController.h; sourceTree = "<group>"; };
+		F86CBBD91D879FEF0055121D /* DeviceInfoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceInfoController.m; sourceTree = "<group>"; };
+		F86CBBDA1D879FEF0055121D /* DeviceInfoController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeviceInfoController.xib; sourceTree = "<group>"; };
+		F86CBBDD1D87A1CA0055121D /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		F86CBBE41D87A6720055121D /* ThreeDESController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeDESController.h; sourceTree = "<group>"; };
+		F86CBBE51D87A6720055121D /* ThreeDESController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeDESController.m; sourceTree = "<group>"; };
+		F86CBBE61D87A6720055121D /* ThreeDESController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThreeDESController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F86CBB4D1D878B380055121D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F86CBB661D878B380055121D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F86CBB711D878B380055121D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F86CBB471D878B380055121D = {
+			isa = PBXGroup;
+			children = (
+				F86CBB521D878B380055121D /* 数据加密处理 */,
+				F86CBB6C1D878B380055121D /* 数据加密处理Tests */,
+				F86CBB771D878B380055121D /* 数据加密处理UITests */,
+				F86CBB511D878B380055121D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F86CBB511D878B380055121D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F86CBB501D878B380055121D /* 数据加密处理.app */,
+				F86CBB691D878B380055121D /* 数据加密处理Tests.xctest */,
+				F86CBB741D878B380055121D /* 数据加密处理UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F86CBB521D878B380055121D /* 数据加密处理 */ = {
+			isa = PBXGroup;
+			children = (
+				F86CBB561D878B380055121D /* AppDelegate.h */,
+				F86CBB571D878B380055121D /* AppDelegate.m */,
+				F86CBB591D878B380055121D /* ViewController.h */,
+				F86CBB5A1D878B380055121D /* ViewController.m */,
+				F86CBBDD1D87A1CA0055121D /* PrefixHeader.pch */,
+				F86CBBDE1D87A2550055121D /* 3DES加密 */,
+				F86CBBD71D879FDC0055121D /* DeviceInfo信息 */,
+				F86CBBC21D879C930055121D /* NSUserDefaults+Secure */,
+				F86CBBC11D879C8E0055121D /* MD5 */,
+				F86CBBBF1D879C7A0055121D /* AES+Base64 */,
+				F86CBB861D878B850055121D /* Category */,
+				F86CBB531D878B380055121D /* Supporting Files */,
+			);
+			path = "数据加密处理";
+			sourceTree = "<group>";
+		};
+		F86CBB531D878B380055121D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F86CBB5C1D878B380055121D /* Main.storyboard */,
+				F86CBB5F1D878B380055121D /* Assets.xcassets */,
+				F86CBB611D878B380055121D /* LaunchScreen.storyboard */,
+				F86CBB641D878B380055121D /* Info.plist */,
+				F86CBB541D878B380055121D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F86CBB6C1D878B380055121D /* 数据加密处理Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F86CBB6D1D878B380055121D /* ______Tests.m */,
+				F86CBB6F1D878B380055121D /* Info.plist */,
+			);
+			path = "数据加密处理Tests";
+			sourceTree = "<group>";
+		};
+		F86CBB771D878B380055121D /* 数据加密处理UITests */ = {
+			isa = PBXGroup;
+			children = (
+				F86CBB781D878B380055121D /* ______UITests.m */,
+				F86CBB7A1D878B380055121D /* Info.plist */,
+			);
+			path = "数据加密处理UITests";
+			sourceTree = "<group>";
+		};
+		F86CBB861D878B850055121D /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				F86CBB871D878B850055121D /* AESUtil */,
+				F86CBB8C1D878B850055121D /* CurrencyUtil */,
+				F86CBB8F1D878B850055121D /* Des */,
+				F86CBB921D878B850055121D /* GTMBase64 */,
+				F86CBB961D878B850055121D /* Header */,
+				F86CBB981D878B850055121D /* MD5 */,
+				F86CBB9B1D878B850055121D /* NSString+JSON */,
+				F86CBB9E1D878B850055121D /* NSString+Verification */,
+				F86CBBA11D878B850055121D /* NSUserDefaults+Secure */,
+				F86CBBA41D878B850055121D /* StringUtil */,
+				F86CBBA71D878B850055121D /* THDeviceInfo */,
+				F86CBBAA1D878B850055121D /* ThreeDES */,
+				F86CBBAD1D878B850055121D /* TimeUtil */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		F86CBB871D878B850055121D /* AESUtil */ = {
+			isa = PBXGroup;
+			children = (
+				F86CBB881D878B850055121D /* AESUtil.h */,
+				F86CBB891D878B850055121D /* AESUtil.m */,
+				F86CBB8A1D878B850055121D /* NSData+AES.h */,
+				F86CBB8B1D878B850055121D /* NSData+AES.m */,
+			);
+			path = AESUtil;
+			sourceTree = "<group>";
+		};
+		F86CBB8C1D878B850055121D /* CurrencyUtil */ = {
+			isa = PBXGroup;
+			children = (
+				F86CBB8D1D878B850055121D /* CurrencyUtil.h */,
+				F86CBB8E1D878B850055121D /* CurrencyUtil.m */,
+			);
+			path = CurrencyUtil;
+			sourceTree = "<group>";
+		};
+		F86CBB8F1D878B850055121D /* Des */ = {
+			isa = PBXGroup;
+			children = (
+				F86CBB901D878B850055121D /* NSData+DLDes.h */,
+				F86CBB911D878B850055121D /* NSData+DLDes.m */,
+			);
+			path = Des;
+			sourceTree = "<group>";
+		};
+		F86CBB921D878B850055121D /* GTMBase64 */ = {
+			isa = PBXGroup;
+			children = (
+				F86CBB931D878B850055121D /* GTMBase64.h */,
+				F86CBB941D878B850055121D /* GTMBase64.m */,
+				F86CBB951D878B850055121D /* GTMDefines.h */,
+			);
+			path = GTMBase64;
+			sourceTree = "<group>";
+		};
+		F86CBB961D878B850055121D /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				F86CBBBD1D87930E0055121D /* GeneralSecretFramework.h */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		F86CBB981D878B850055121D /* MD5 */ = {
+			isa = PBXGroup;
+			children = (
+				F86CBB991D878B850055121D /* MD5.h */,
+				F86CBB9A1D878B850055121D /* MD5.m */,
+			);
+			path = MD5;
+			sourceTree = "<group>";
+		};
+		F86CBB9B1D878B850055121D /* NSString+JSON */ = {
+			isa = PBXGroup;
+			children = (
+				F86CBB9C1D878B850055121D /* NSString+JSON.h */,
+				F86CBB9D1D878B850055121D /* NSString+JSON.m */,
+			);
+			path = "NSString+JSON";
+			sourceTree = "<group>";
+		};
+		F86CBB9E1D878B850055121D /* NSString+Verification */ = {
+			isa = PBXGroup;
+			children = (
+				F86CBB9F1D878B850055121D /* NSString+Verification.h */,
+				F86CBBA01D878B850055121D /* NSString+Verification.m */,
+			);
+			path = "NSString+Verification";
+			sourceTree = "<group>";
+		};
+		F86CBBA11D878B850055121D /* NSUserDefaults+Secure */ = {
+			isa = PBXGroup;
+			children = (
+				F86CBBA21D878B850055121D /* NSUserDefaults+Secure.h */,
+				F86CBBA31D878B850055121D /* NSUserDefaults+Secure.m */,
+			);
+			path = "NSUserDefaults+Secure";
+			sourceTree = "<group>";
+		};
+		F86CBBA41D878B850055121D /* StringUtil */ = {
+			isa = PBXGroup;
+			children = (
+				F86CBBA51D878B850055121D /* StringUtil.h */,
+				F86CBBA61D878B850055121D /* StringUtil.m */,
+			);
+			path = StringUtil;
+			sourceTree = "<group>";
+		};
+		F86CBBA71D878B850055121D /* THDeviceInfo */ = {
+			isa = PBXGroup;
+			children = (
+				F86CBBA81D878B850055121D /* THDeviceInfo.h */,
+				F86CBBA91D878B850055121D /* THDeviceInfo.m */,
+			);
+			path = THDeviceInfo;
+			sourceTree = "<group>";
+		};
+		F86CBBAA1D878B850055121D /* ThreeDES */ = {
+			isa = PBXGroup;
+			children = (
+				F86CBBAB1D878B850055121D /* ThreeDES.h */,
+				F86CBBAC1D878B850055121D /* ThreeDES.m */,
+			);
+			path = ThreeDES;
+			sourceTree = "<group>";
+		};
+		F86CBBAD1D878B850055121D /* TimeUtil */ = {
+			isa = PBXGroup;
+			children = (
+				F86CBBAE1D878B850055121D /* TimeUtil.h */,
+				F86CBBAF1D878B850055121D /* TimeUtil.m */,
+			);
+			path = TimeUtil;
+			sourceTree = "<group>";
+		};
+		F86CBBBF1D879C7A0055121D /* AES+Base64 */ = {
+			isa = PBXGroup;
+			children = (
+				F86CBBD21D879FC00055121D /* AESBase64Controller.h */,
+				F86CBBD31D879FC00055121D /* AESBase64Controller.m */,
+				F86CBBD41D879FC00055121D /* AESBase64Controller.xib */,
+			);
+			name = "AES+Base64";
+			sourceTree = "<group>";
+		};
+		F86CBBC11D879C8E0055121D /* MD5 */ = {
+			isa = PBXGroup;
+			children = (
+				F86CBBC81D879F980055121D /* MD5Controller.h */,
+				F86CBBC91D879F980055121D /* MD5Controller.m */,
+				F86CBBCA1D879F980055121D /* MD5Controller.xib */,
+			);
+			name = MD5;
+			sourceTree = "<group>";
+		};
+		F86CBBC21D879C930055121D /* NSUserDefaults+Secure */ = {
+			isa = PBXGroup;
+			children = (
+				F86CBBC31D879F830055121D /* NSUserDefaultsSecure.h */,
+				F86CBBC41D879F830055121D /* NSUserDefaultsSecure.m */,
+				F86CBBC51D879F830055121D /* NSUserDefaultsSecure.xib */,
+			);
+			name = "NSUserDefaults+Secure";
+			sourceTree = "<group>";
+		};
+		F86CBBD71D879FDC0055121D /* DeviceInfo信息 */ = {
+			isa = PBXGroup;
+			children = (
+				F86CBBD81D879FEF0055121D /* DeviceInfoController.h */,
+				F86CBBD91D879FEF0055121D /* DeviceInfoController.m */,
+				F86CBBDA1D879FEF0055121D /* DeviceInfoController.xib */,
+			);
+			name = "DeviceInfo信息";
+			sourceTree = "<group>";
+		};
+		F86CBBDE1D87A2550055121D /* 3DES加密 */ = {
+			isa = PBXGroup;
+			children = (
+				F86CBBE41D87A6720055121D /* ThreeDESController.h */,
+				F86CBBE51D87A6720055121D /* ThreeDESController.m */,
+				F86CBBE61D87A6720055121D /* ThreeDESController.xib */,
+			);
+			name = "3DES加密";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F86CBB4F1D878B380055121D /* 数据加密处理 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F86CBB7D1D878B380055121D /* Build configuration list for PBXNativeTarget "数据加密处理" */;
+			buildPhases = (
+				F86CBB4C1D878B380055121D /* Sources */,
+				F86CBB4D1D878B380055121D /* Frameworks */,
+				F86CBB4E1D878B380055121D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "数据加密处理";
+			productName = "数据加密处理";
+			productReference = F86CBB501D878B380055121D /* 数据加密处理.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F86CBB681D878B380055121D /* 数据加密处理Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F86CBB801D878B380055121D /* Build configuration list for PBXNativeTarget "数据加密处理Tests" */;
+			buildPhases = (
+				F86CBB651D878B380055121D /* Sources */,
+				F86CBB661D878B380055121D /* Frameworks */,
+				F86CBB671D878B380055121D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F86CBB6B1D878B380055121D /* PBXTargetDependency */,
+			);
+			name = "数据加密处理Tests";
+			productName = "数据加密处理Tests";
+			productReference = F86CBB691D878B380055121D /* 数据加密处理Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F86CBB731D878B380055121D /* 数据加密处理UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F86CBB831D878B380055121D /* Build configuration list for PBXNativeTarget "数据加密处理UITests" */;
+			buildPhases = (
+				F86CBB701D878B380055121D /* Sources */,
+				F86CBB711D878B380055121D /* Frameworks */,
+				F86CBB721D878B380055121D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F86CBB761D878B380055121D /* PBXTargetDependency */,
+			);
+			name = "数据加密处理UITests";
+			productName = "数据加密处理UITests";
+			productReference = F86CBB741D878B380055121D /* 数据加密处理UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F86CBB481D878B380055121D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "石塔Mr.GC";
+				TargetAttributes = {
+					F86CBB4F1D878B380055121D = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					F86CBB681D878B380055121D = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = F86CBB4F1D878B380055121D;
+					};
+					F86CBB731D878B380055121D = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = F86CBB4F1D878B380055121D;
+					};
+				};
+			};
+			buildConfigurationList = F86CBB4B1D878B380055121D /* Build configuration list for PBXProject "数据加密处理" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F86CBB471D878B380055121D;
+			productRefGroup = F86CBB511D878B380055121D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F86CBB4F1D878B380055121D /* 数据加密处理 */,
+				F86CBB681D878B380055121D /* 数据加密处理Tests */,
+				F86CBB731D878B380055121D /* 数据加密处理UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F86CBB4E1D878B380055121D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F86CBBDC1D879FEF0055121D /* DeviceInfoController.xib in Resources */,
+				F86CBBC71D879F830055121D /* NSUserDefaultsSecure.xib in Resources */,
+				F86CBB631D878B380055121D /* LaunchScreen.storyboard in Resources */,
+				F86CBB601D878B380055121D /* Assets.xcassets in Resources */,
+				F86CBB5E1D878B380055121D /* Main.storyboard in Resources */,
+				F86CBBD61D879FC00055121D /* AESBase64Controller.xib in Resources */,
+				F86CBBE81D87A6720055121D /* ThreeDESController.xib in Resources */,
+				F86CBBCC1D879F980055121D /* MD5Controller.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F86CBB671D878B380055121D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F86CBB721D878B380055121D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F86CBB4C1D878B380055121D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F86CBBB31D878B850055121D /* NSData+DLDes.m in Sources */,
+				F86CBBE71D87A6720055121D /* ThreeDESController.m in Sources */,
+				F86CBBB11D878B850055121D /* NSData+AES.m in Sources */,
+				F86CBBD51D879FC00055121D /* AESBase64Controller.m in Sources */,
+				F86CBBBC1D878B850055121D /* TimeUtil.m in Sources */,
+				F86CBB5B1D878B380055121D /* ViewController.m in Sources */,
+				F86CBBB91D878B850055121D /* StringUtil.m in Sources */,
+				F86CBBB51D878B850055121D /* MD5.m in Sources */,
+				F86CBBB41D878B850055121D /* GTMBase64.m in Sources */,
+				F86CBBB61D878B850055121D /* NSString+JSON.m in Sources */,
+				F86CBBCB1D879F980055121D /* MD5Controller.m in Sources */,
+				F86CBBB21D878B850055121D /* CurrencyUtil.m in Sources */,
+				F86CBBBB1D878B850055121D /* ThreeDES.m in Sources */,
+				F86CBB581D878B380055121D /* AppDelegate.m in Sources */,
+				F86CBBB81D878B850055121D /* NSUserDefaults+Secure.m in Sources */,
+				F86CBBB71D878B850055121D /* NSString+Verification.m in Sources */,
+				F86CBBDB1D879FEF0055121D /* DeviceInfoController.m in Sources */,
+				F86CBBC61D879F830055121D /* NSUserDefaultsSecure.m in Sources */,
+				F86CBB551D878B380055121D /* main.m in Sources */,
+				F86CBBB01D878B850055121D /* AESUtil.m in Sources */,
+				F86CBBBA1D878B850055121D /* THDeviceInfo.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F86CBB651D878B380055121D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F86CBB6E1D878B380055121D /* ______Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F86CBB701D878B380055121D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F86CBB791D878B380055121D /* ______UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F86CBB6B1D878B380055121D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F86CBB4F1D878B380055121D /* 数据加密处理 */;
+			targetProxy = F86CBB6A1D878B380055121D /* PBXContainerItemProxy */;
+		};
+		F86CBB761D878B380055121D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F86CBB4F1D878B380055121D /* 数据加密处理 */;
+			targetProxy = F86CBB751D878B380055121D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F86CBB5C1D878B380055121D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F86CBB5D1D878B380055121D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F86CBB611D878B380055121D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F86CBB621D878B380055121D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F86CBB7B1D878B380055121D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F86CBB7C1D878B380055121D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F86CBB7E1D878B380055121D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/数据加密处理/PrefixHeader.pch";
+				INFOPLIST_FILE = "数据加密处理/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.star.------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F86CBB7F1D878B380055121D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/数据加密处理/PrefixHeader.pch";
+				INFOPLIST_FILE = "数据加密处理/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.star.------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F86CBB811D878B380055121D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "数据加密处理Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.star.------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/数据加密处理.app/数据加密处理";
+			};
+			name = Debug;
+		};
+		F86CBB821D878B380055121D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "数据加密处理Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.star.------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/数据加密处理.app/数据加密处理";
+			};
+			name = Release;
+		};
+		F86CBB841D878B380055121D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "数据加密处理UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.star.------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "数据加密处理";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		F86CBB851D878B380055121D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "数据加密处理UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.star.------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "数据加密处理";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F86CBB4B1D878B380055121D /* Build configuration list for PBXProject "数据加密处理" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F86CBB7B1D878B380055121D /* Debug */,
+				F86CBB7C1D878B380055121D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F86CBB7D1D878B380055121D /* Build configuration list for PBXNativeTarget "数据加密处理" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F86CBB7E1D878B380055121D /* Debug */,
+				F86CBB7F1D878B380055121D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F86CBB801D878B380055121D /* Build configuration list for PBXNativeTarget "数据加密处理Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F86CBB811D878B380055121D /* Debug */,
+				F86CBB821D878B380055121D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F86CBB831D878B380055121D /* Build configuration list for PBXNativeTarget "数据加密处理UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F86CBB841D878B380055121D /* Debug */,
+				F86CBB851D878B380055121D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F86CBB481D878B380055121D /* Project object */;
+}
